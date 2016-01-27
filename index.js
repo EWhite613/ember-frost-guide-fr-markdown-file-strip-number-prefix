@@ -10,7 +10,7 @@ var mergeTrees = require('broccoli-merge-trees');
 var path = require('path');
 
 module.exports = {
-  name: 'ember-fr-markdown-file',
+  name: 'ember-fr-markdown-file-strip-number-prefix',
 
   included: function (app) {
     this._super.included(app);
@@ -19,7 +19,7 @@ module.exports = {
   treeForAddon: function (tree) {
     var mdPaths = [];
 
-    if (this.project.name() !== 'ember-fr-markdown-file') {
+    if (this.project.name() !== 'ember-fr-markdown-file-strip-number-prefix') {
       var appMdRoot = path.join(this.project.root, 'markdown');
       if (fs.existsSync(appMdRoot)) {
         mdPaths.push(appMdRoot);

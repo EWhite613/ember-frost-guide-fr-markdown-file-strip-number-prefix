@@ -1,7 +1,7 @@
 {
-  "name": "ember-fr-markdown-file",
+  "name": "ember-fr-markdown-file-strip-number-prefix",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Just like ember-fr-markdown but strip the first 3 characters in our case numbers [0-9][0-9][-]]",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/ciena-frost/ember-fr-markdown-file",
+  "repository": "https://github.com/EWhite613/ember-fr-markdown-file-strip-number-prefix",
   "engines": {
     "node": ">= 0.10.0"
   },

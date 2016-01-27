@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import markdownFiles from 'ember-fr-markdown-file/markdownFiles';
+import markdownFiles from 'ember-fr-markdown-file-strip-number-prefix/markdownFiles';
 
 Object.prototype.renameProperty = function (oldName, newName) {
      // Do nothing if the names are the same
