@@ -45,9 +45,7 @@ function dive(obj){
   return newObject;
 }
 export function frMarkdownFile([path]) {
-  console.log(markdownFiles);
   var strippedMarkdownFiles = dive(clone(markdownFiles));
-  console.log(strippedMarkdownFiles);
   let markdown = Ember.get(strippedMarkdownFiles, path.replace(/\//g, '.'));
   return markdown;
 }
