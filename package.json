@@ -1,6 +1,6 @@
 {
   "name": "ember-fr-markdown-file-strip-number-prefix",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Just like ember-fr-markdown but strip the first 3 characters in our case numbers [0-9][0-9][-]]",
   "directories": {
     "doc": "doc",
