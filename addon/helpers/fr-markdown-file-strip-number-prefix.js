@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import markdownFiles from 'ember-fr-markdown-file-strip-number-prefix/markdownFiles';
+import markdownFiles from 'ember-frost-guide-fr-markdown-file-strip-number-prefix/markdownFiles';
 
 function renameProperty(obj, oldName, newName) {
      // Do nothing if the names are the same

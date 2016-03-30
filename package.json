@@ -1,6 +1,6 @@
 {
-  "name": "ember-fr-markdown-file-strip-number-prefix",
-  "version": "1.2.0",
+  "name": "ember-frost-guide-fr-markdown-file-strip-number-prefix",
+  "version": "1.2.3",
   "description": "Just like ember-fr-markdown but strip the first 3 characters in our case numbers [0-9][0-9][-]]",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/EWhite613/ember-fr-markdown-file-strip-number-prefix",
+  "repository": "https://github.com/EWhite613/ember-frost-guide-fr-markdown-file-strip-number-prefix",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -44,7 +44,8 @@
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
     "ember-cli-babel": "^5.1.5",
-    "ember-cli-htmlbars": "^1.0.1"
+    "ember-cli-htmlbars": "^1.0.1",
+    "mkdirp": "^0.5.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
