@@ -43,7 +43,6 @@ Flatiron.prototype.write = function (readTree, destDir) {
     }
 
     output = "export default " + JSON.stringify(obj, null, 2);
-    console.log(output)
     mkdirp.sync(path.join(destDir, path.dirname(_this.options.outputFile)));
     fs.writeFileSync(path.join(destDir, _this.options.outputFile), output);
   });
