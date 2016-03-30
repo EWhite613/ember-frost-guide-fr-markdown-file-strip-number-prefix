@@ -39,14 +39,14 @@ function dive(obj){
       var newProp = dive(clone(prop));
       newObject[key] = newProp;
     }
-    renameProperty(newObject, arr[i], arr[i].toString().substring(3))
+    renameProperty(newObject, arr[i], arr[i].toString().substring(3).toLowerCase())
     i++;
   }
   return newObject;
 }
 export function frMarkdownFile([path]) {
   var strippedMarkdownFiles = dive(clone(markdownFiles));
-  let markdown = Ember.get(strippedMarkdownFiles, path.replace(/\//g, '.'));
+  let markdown = Ember.get(strippedMarkdownFiles, path.replace(/\//g, '.').toLowerCase());
   return markdown;
 }
 export default Ember.Helper.helper(frMarkdownFile);
