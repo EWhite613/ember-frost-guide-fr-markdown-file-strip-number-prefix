@@ -29,7 +29,7 @@ Flatiron.prototype.write = function (readTree, destDir) {
             encoding: "utf8"
           });
           if (process.env.external) {
-            content = content.replace(/<private>[ |\n|\t|\w|<|=|\/|\>.|\-|\.|\"|\"]+<\/private>/ig, "");
+            content = content.replace(/<private>[\w\W]*<\/private>/ig, "");
             if (content.indexOf("<private>") > -1) {
               content = 'aborted \n content still contained private tag after regex'
             }
